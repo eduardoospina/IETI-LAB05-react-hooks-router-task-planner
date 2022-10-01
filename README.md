@@ -9,8 +9,23 @@
 ## Hooks / React Router
 
     1) Connect your login page submit button to your API Login Endpoint using useEffect hook and fetch:
+
+se necesita utilizar el siguiente usuario: 
+
+	- primerauser523@gmail.com
+	- 123456789
+
+![](https://i.postimg.cc/C5JgK7tY/submittoken1.png)
+
+![](https://i.postimg.cc/L66SWdYs/submittoken2.png)
+
     2) Implement basic React Router scaffolding files and a basic landing page component
+
+
+
     3) Render on your landing page the tasks list using your /tasks endpoint, make sure you populate your MongoDB Database with tasks, map every task to your UI component design.
+
+
 
 
 

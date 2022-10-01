@@ -39,7 +39,6 @@ function Login () {
                         label = "Email" 
                         placeholder = "Enter your Email" 
                         value={mail} 
-                        variant="standard"
                         onChange={(e) => {setMail(e.target.value);}}/>
                     </p>
 
@@ -50,7 +49,6 @@ function Login () {
                         value={password}  
                         placeholder = "Enter your password" 
                         type = "password"
-                        variant="standard"
                         onChange={(e) => {setPassword(e.target.value)}}/>
                     </p>
 
@@ -63,7 +61,6 @@ function Login () {
                         <button
                         className="button button1" 
                         onClick={ () => {
-                        console.log('click');  
                         setSubmit({submit : true})}} >
                         Log in
                         </button>
