@@ -6,56 +6,12 @@
     - Eduardo Ospina Mejia
 
 
-## Intro to React JS
+## Hooks / React Router
 
-    1) Create a new React Application:
+    1) Connect your login page submit button to your API Login Endpoint using useEffect hook and fetch:
+    2) Implement basic React Router scaffolding files and a basic landing page component
+    3) Render on your landing page the tasks list using your /tasks endpoint, make sure you populate your MongoDB Database with tasks, map every task to your UI component design.
 
-![](https://i.postimg.cc/kMRPrrb0/creacion-react-iuntro.png)
-
-![](https://i.postimg.cc/TY8Mfkjp/creacion-react-iuntro-2.png)
-
-![](https://i.postimg.cc/P5hg8PRH/creacion-react-iuntro-3.png)
-
-    2) Create a GIthub repo and commit those previous step files.
-
-![](https://i.postimg.cc/3xBPjYsv/creacion-push-react.png)
-
-    3) Create base layout for the login ( email box, password box, login button, basic styling ), you should use a UI Library like mui or ant
-   
-![](https://i.postimg.cc/5ycT30nf/creacion-mui-1.png)
-
-![](https://i.postimg.cc/ZKSXvWWc/creacion-mui-2.png)
-
-![](https://i.postimg.cc/x1j7gByN/creacion-mui-3.png) 
-
-![](https://i.postimg.cc/50PYRbgG/creacion-mui-4.png)
-
-![](https://i.postimg.cc/SNY2g0MT/creacion-mui-5.png)
-
-![](https://i.postimg.cc/T38ySkjR/creacion-mui-6.png)
-
-![](https://i.postimg.cc/jSzWrzvy/creacion-mui-7.png)
-
-![](https://i.postimg.cc/90RMgTrR/creacion-mui-8.png)
-
-
-    4) Make sure you identify all those potential components and split your code according to it.
-
-![](https://i.postimg.cc/5yhth0CP/creacion-mui-9.png)
-
-
-## React Challenge
-
-    Instead of just using CSS, let's implement your styles using SASS. Read installation manual and replace your .css files by .scss ones
-
-### Additional Resources
-
-    Check at Next JS documentation, a new approach for building Concise React Apps
-
-### CSS Challenge
-
-    Create another repo on your GitHub
-    Build your favorite magazine / video game cover using only HTML and CSS, remember the Semantic HTML Lesson and CSS Specificity
 
 
 
