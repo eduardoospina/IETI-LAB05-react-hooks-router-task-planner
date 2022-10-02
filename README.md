@@ -33,7 +33,9 @@ se necesita utilizar el siguiente usuario:
 
     3) Render on your landing page the tasks list using your /tasks endpoint, make sure you populate your MongoDB Database with tasks, map every task to your UI component design.
 
+![](https://i.postimg.cc/7P7fgtf6/submittoken6.png)
 
+![](https://i.postimg.cc/L6phvk1V/submittoken7.png)
 
 
 
