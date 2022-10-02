@@ -1,25 +1,40 @@
 import React, {useEffect, useState} from 'react';
 import {Avatar, Grid, Paper, TextField} from '@mui/material'
+import { useNavigate } from 'react-router-dom';
 import '../Login.css';
 import '../button2.css';
 import '../Button1.css';
 
+
 function Login () {
+
+    const navigate = useNavigate();
     const [mail, setMail] = useState('');
     const [password, setPassword] = useState('');
+    const [auth, setAuth] = useState({auth : false});
+    const [error, setError] = useState({error : false});
 
     const [submit, setSubmit] = useState({submit : false});
     const url = 'http://localhost:8080/api/auth';
+
+    
+
+    const entro = () =>{
+        setAuth({auth : true});
+        console.log('autorizado')
+        navigate('/paginainicio')
+    }
 
     useEffect(() =>{
         const request = {'url': url, body:{"email":mail,"password":password}}
         try {
             if (submit.submit){ 
                 console.log(request)
-                UseFetchPOST(request);
+                FetchPOST(request).then(res => (res.data.hasOwnProperty('token') ? entro(): setError({error:true})));
             }
         } catch(e){
             console.log(e);
+            setError(true);
         }
 
     },[submit]);
@@ -72,29 +87,22 @@ function Login () {
     )
 }
 
-let UseFetchPOST = async (requestParams) => {
-    let responseRequest = ''
-    let dataResponse = ''
-    let loading = ''
-    let error = ''
-        try {
-            const url = requestParams.url;
-            const requestOptions = {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'},
-                body: JSON.stringify(requestParams.body)
-            };
-            
-            fetch(url, requestOptions)
-                .then(
-                    response => response.json())
-                .then(data => console.log("TOKEN " + data.token, "date exp " + data.expirationDate ))
-                .then(loading = false)
-        } catch(e){
-            loading = false;
-            error = e;
-        }
-        return {responseRequest,dataResponse, loading, error}
+let FetchPOST = async (requestParams) => {
+    try {
+        var error = ''
+        const url = requestParams.url;
+        const requestOptions = {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'},
+            body: JSON.stringify(requestParams.body)
+        };
+
+        var res = await fetch (url, requestOptions);
+        var data = await res.json(); 
+    } catch(e){
+        error = e.message;
     }
+    return {res,data,error}
+}
 
 export default Login;
