@@ -21,11 +21,11 @@ se necesita utilizar el siguiente usuario:
 
     2) Implement basic React Router scaffolding files and a basic landing page component
 
-![](https://i.postimg.cc/9MLRq6rN/submittoken5-2.png)
+![](https://i.postimg.cc/xCfN8fTz/submittoken5-1.png)
 
 ![](https://i.postimg.cc/FFnkFQtY/submittoken3.png)
 
-![](https://i.postimg.cc/xCfN8fTz/submittoken5-1.png)
+![](https://i.postimg.cc/9MLRq6rN/submittoken5-2.png)
 
 ![](https://i.postimg.cc/9fVrgm9n/submittoken4.png)
 
